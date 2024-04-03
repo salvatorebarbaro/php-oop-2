@@ -2,10 +2,10 @@
 
 <div class="container   ">
 <h1 class=" text-uppercase fs-1 my-3 mb-4 text-center ">Articoli E-commerce per animali</h1>
-<div class="row flex-column align-items-center ">
+<div class="row  ">
     <?php foreach($Elements as $Element) { 
     ?>
-    <div class="col-6 d-flex justify-content-center mb-5 ">
+    <div class="col-4 d-flex justify-content-center mb-5 ">
             <div class="card border  rounded-4  col text-center position-relative">
                 <img src="<?php echo ($Element->Img)  ?>" class="card-img-top " alt="">
                 <div class="card-body">
