@@ -1,12 +1,12 @@
 <?php require './Layout/Header.php' ?>
 
-<div class="container   ">
+<div class="container  ">
 <h1 class=" text-uppercase fs-1 my-3 mb-4 text-center ">Articoli E-commerce per animali</h1>
-<div class="row  ">
+<div class="row justify-content-center  ">
     <?php foreach($Elements as $Element) { 
     ?>
-    <div class="col-4 d-flex justify-content-center mb-5 ">
-            <div class="card border  rounded-4  col text-center position-relative">
+    <div class="col-6 d-flex justify-content-center mb-5 ">
+            <div class="card border  rounded-4  col-8 text-center position-relative">
                 <img src="<?php echo ($Element->Img)  ?>" class="card-img-top " alt="">
                 <div class="card-body">
                     <h5 class="card-title fs-2 text-uppercase text-success  "><?php echo ($Element->Name) ?></h5>
@@ -18,7 +18,12 @@
         </div>
     </div>
     <?php }?>
+    <div class=" bg-black  text-white position-fixed  start-0 top-0 col-2 d-flex flex-column align-items-center m-4">
+        <h5 class="">Nome:<?php echo ($Cacioppo->Name) ?></h5>
+        
+    </div>
 </div>
 </div>
+
  
 <?php require './Layout/Footer.php' ?> 

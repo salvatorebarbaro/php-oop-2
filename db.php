@@ -3,6 +3,8 @@
 require './models/Product.php';
 require './models/Race.php';
 require './models/Element.php';
+require './models/Users.php';
+require './models/PremiumUser.php';
 
 $Cuccia = new Element("Cuccia con fiori",49.99,"Cane","Oggetto","Cuccia molto piccola gradevole con dei fiori che si possono notare sulla cuccia stessa","https://tse3.mm.bing.net/th/id/OIG2.vQBeHWzMf4wNUURP_HhO?pid=ImgGn");
 
@@ -11,4 +13,8 @@ $Tiragraffi = new Element("SupeTiragraffi resistente",32.89,"gatto","Oggetto","t
 $CiboCane = new Element("Croccantini al manzo",18,"Cane","Alimento", "Cibo molto puzzolente","https://tse4.mm.bing.net/th/id/OIG2.JqoWRU3BapP1AscqjvMN?pid=ImgGn");
 
 $Elements=[$Cuccia,$CiboCane,$Tiragraffi];
+
+$Cacioppo = new Ospite("Giancarlo","Magalli","Via della sventura 18","Liguria","Italia","Ospite");
+
+
 ?>
