@@ -1,6 +1,6 @@
 <?php
 class Premium extends Ospite{
-    public $Discount;
+    protected $Discount;
 
     function __construct($Name,$Surname,$Address,$Region,$Country,$Tipo)
     {
