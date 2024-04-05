@@ -8,12 +8,14 @@ class food extends Element{
 
     public $smeel;
 
-    function __construct($_Name,$_Price,$_Type,$_Element,$_Description,$_Img,$_smeel)
+    function __construct($_Name,$_Price,$_Type,$_Element,$_Description,$_Img,$_smeel,$_weight)
     {
 
         parent::__construct($_Name,$_Price,$_Type,$_Element,$_Description,$_Img);
         {
             $this-> smeel= $_smeel;
+
+            $this-> setWeight($_weight);
 
         }
         
