@@ -33,17 +33,33 @@ class Element extends Race{
 
             $this->Img = $_Img;
 
-            $this->icons($_Type);
+            $this->Icona=$_Type;
         }
         
     }
-
+/*
     public function icons($Type){
+        
         if( strtolower($Type)  === "cane"){
             $this->Icona  = '<i class="fa-solid fa-dog"></i>';
         }
         elseif(strtolower($Type)  === "gatto"){
             $this->Icona  = '<i class="fa-solid fa-cat"></i>';
+        }
+    }
+    */
+
+    public function getIcons($Type){
+        if(strtolower($Type) != "cane" && strtolower($Type) != "gatto" ){
+            throw new Exception("categoria non accettata ");
+        }
+        
+
+        if( strtolower($Type)  === "cane"){
+            return '<i class="fa-solid fa-dog"></i>';
+        }
+        elseif(strtolower($Type)  === "gatto"){
+            return '<i class="fa-solid fa-cat"></i>';
         }
     }
 
